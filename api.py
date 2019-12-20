@@ -1,10 +1,10 @@
-from flask import Flask
+from flask import Flask, jsonify
 
 app = Flask(__name__) #__name__ is a special variable in python that creates an instance of the web app
 
 @app.route("/", methods =['GET'])
 def hello():
-    return "Hello World"
+    return ("Hello World")
 
 @app.route("/hello")
 def helloo():
